@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<body>
+    <!-- This is the code that creates the rectangle that takes takes input and says "enter your name" as a place holder -->
+    <input id="name-input" type="text" placeholder="Enter your name" />
+    <!-- This is the code that creats the button that says click me -->
+    <button id="my-button">Click Me</button>
+
+    <script>
+        // the code in javascript that queries for button and the input box
+    var myButton = document.querySelector('#my-button');
+    var nameInput = document.querySelector('#name-input');
+        // the logic that takes in the users input and says "hello + (users input)"
+    myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+        }
+    });
+</script>
+    
+</body>
+</html>
